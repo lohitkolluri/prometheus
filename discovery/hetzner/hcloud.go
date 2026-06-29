@@ -119,8 +119,8 @@ func (d *hcloudDiscovery) refresh(ctx context.Context) ([]*targetgroup.Group, er
 
 		// [hcloud.Server.Datacenter] is deprecated and will be removed after 1 July 2026.
 		// See https://docs.hetzner.cloud/changelog#2025-12-16-phasing-out-datacenters
-		if server.Datacenter != nil { // nolint: staticcheck
-			labels[hetznerLabelDatacenter] = model.LabelValue(server.Datacenter.Name) // nolint: staticcheck
+		if server.Datacenter != nil { //nolint:staticcheck
+			labels[hetznerLabelDatacenter] = model.LabelValue(server.Datacenter.Name) //nolint:staticcheck
 		}
 
 		if server.Image != nil {

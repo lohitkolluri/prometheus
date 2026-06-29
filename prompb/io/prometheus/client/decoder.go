@@ -11,7 +11,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package io_prometheus_client //nolint:revive
+package io_prometheus_client
 
 import (
 	"encoding/binary"
